@@ -49,7 +49,7 @@ do
     else
         TEMP=$(curl -s "$WEBSITE${TRAIN_CONNECTION[$i]}")
     fi
-    PROBLEM=$(echo "$TEMP" | xmllint --html --xpath //h2[@id=akutmeldungen]/following::div[1]/div - 2>/dev/null)
+    PROBLEM=$(echo "$TEMP" | xmllint --html --xpath "//h2[contains(., "Akutmeldungen")]/following-sibling::div/div/div" - 2>/dev/null)
 
     if [ -z "$PROBLEM" ]
     then
