@@ -1,5 +1,11 @@
 language: generic
-install: xmllint curl bats
+before_install:
+addons:
+  apt:
+    packages:
+      - libxml2-utils
+      - curl
+      - bats
 script: bin/bats --tap test
 notifications:
   email:
