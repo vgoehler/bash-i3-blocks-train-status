@@ -8,6 +8,7 @@ An i3 wm blocks app for figuring out the train status of certain trains the deve
 - bash :smiley:
 - curl
 - xmllint
+- FontAwesome for the [train icon :train:](https://fontawesome.com/icons/train?style=solid)
 
 ## i3blocks.conf
 ```config
