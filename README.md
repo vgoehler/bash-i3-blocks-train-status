@@ -1,4 +1,6 @@
 # bash-i3-blocks-train-status
+[![Build Status](https://travis-ci.com/vgoehler/bash-i3-blocks-train-status.png)](https://travis-ci.com/vgoehler/bash-i3-blocks-train-status)
+
 An i3 wm blocks app for figuring out the train status of certain trains the develop needs to take.
 
 ## Requirements
