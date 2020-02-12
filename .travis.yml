@@ -6,7 +6,7 @@ addons:
       - libxml2-utils
       - curl
       - bats
-script: bin/bats --tap test
+script: bats --tap test
 notifications:
   email:
     on_success: never
