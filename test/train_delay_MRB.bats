@@ -28,7 +28,7 @@ EXAMPLE_DIR="$BATS_TEST_DIRNAME/example"
 }
 
 @test "parse from okay files correctly" {
-    run "$SUT" "$EXAMPLE_DIR/re3_okay" "$EXAMPLE_DIR/rb30_okay"
+    run "$SUT" "$EXAMPLE_DIR/re3_okay_12.02.20" "$EXAMPLE_DIR/rb30_okay"
     echo "$output"
     [ "$status" -eq 0 ]
     [ "${lines[0]}" = "<span weight='bold'>RE3:</span><span font='FontAwesome' color='#0080FF'></span> <span weight='bold'>RB30:</span><span font='FontAwesome' color='#0080FF'></span>" ]
